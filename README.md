@@ -1,2 +1,2 @@
 # Projeto-Senai
-Linguagem orientada a objetos
+Programacao orientada a objetos
