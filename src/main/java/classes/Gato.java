@@ -1,17 +1,18 @@
 package classes;
 
-public class Gato {
-    private String nome;
-    private int idade;
+public class Gato extends Animal{
     private String raca;
 
-    public Gato(String nome, String raca, int idade){
-        this.nome = nome;
-        this.raca = raca;
-        this.idade = idade;
+    @Override
+    public void alimentar(){
+        super.alimentar();
+        System.out.println(super.getNome() +" Gostou Miaaau");
+
     }
 
-    public void MostrarDados () {
-        System.out.println("nome: " + nome + "\nraca: " + raca + "\nidade: " + idade);
+    public Gato(String nome, String raca, int idade) {
+        super.setNome(nome);
+        super.setIdade(idade);
+        this.raca = raca;
     }
 }
