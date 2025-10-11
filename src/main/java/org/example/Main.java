@@ -1,6 +1,7 @@
 package org.example;
 import classes.Cachorro;
 import classes.Dono;
+import classes.Gato;
 
 
 public class Main {
@@ -14,18 +15,16 @@ public class Main {
 
         cachorro.exibirDados();
 
-        Cachorro cachorro2 = new Cachorro();
-        cachorro2.setNome("David");
-        cachorro2.setRaca("Pinscher");
-        cachorro2.setIdade(23);
-
-
         Dono dono = new Dono();
 
         dono.setNome("Gustavo");
         dono.setIdade(30);
 
         dono.mostrarDados();
+
+        Gato cat1 = new  Gato("Miau", "Siamês", 2);
+
+        cat1.MostrarDados();
     }
 }
 
