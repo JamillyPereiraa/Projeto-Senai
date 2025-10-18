@@ -1,28 +1,19 @@
 package classes;
 
-public class Cachorro {
-    private String nome;
-    private String raca;
-    private int idade;
+import java.util.List;
 
-    public void setNome(String nome) {this.nome = nome;}
-    public String getNome() {return nome;}
+public class Cachorro extends Animal {
 
-    public void setRaca(String raca) {this.raca = raca;}
-    public String getRaca() {return raca;}
 
-    public void setIdade(int idade) {this.idade = idade;}
-    public int getIdade() {return idade;}
-
-    public void exibirDados(){
-        System.out.println("nome: " + Cachorro.this.getNome() + "\n" + "raca: " + Cachorro.this.getRaca() + "\n" + "idade: " + Cachorro.this.getIdade());
+    public Cachorro(String nome, String raca, int idade) {
+        super(nome, raca, idade);
     }
 
-
-    void mostrarDados() {
-        System.out.println("Nome: " + nome + "\nRaça: " + raca + "\nIdade: " + idade + " anos\n");
+    public Cachorro() {
+        super();
     }
 }
+
 
 
 

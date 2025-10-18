@@ -7,24 +7,28 @@ import classes.Gato;
 public class Main {
     public static void main(String[] args) {
 
-        Cachorro cachorro = new Cachorro();
+
+        Gato gato = new Gato();
+
+        gato.setNome("Nina");
+        gato.setIdade(2);
+        gato.setRaca("Siamês");
+
+
+        Cachorro cachorro = new Cachorro("Pandora", "Golden", 5);
 
         cachorro.setNome("Pandora");
         cachorro.setIdade(5);
         cachorro.setRaca("Golden");
 
-        cachorro.exibirDados();
-
-        Dono dono = new Dono();
+        Dono dono = new Dono("Gustavo", 30, cachorro);
 
         dono.setNome("Gustavo");
         dono.setIdade(30);
-
+        dono.setAnimais(cachorro);
+        dono.setAnimais(gato);
         dono.mostrarDados();
 
-        Gato cat1 = new  Gato("Miau", "Siamês", 2);
-
-        cat1.MostrarDados();
     }
 }
 
